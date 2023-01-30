@@ -1,0 +1,104 @@
+body {
+    background-color: #24272e;
+}
+
+.scoreboard {
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    width: 20%;
+    height: 15vh;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 5%;
+}
+span {
+    font-family: sans-serif;
+}
+span:first-of-type {
+    margin-right: 2.5%;
+}
+span:last-of-type {
+    margin-left: 2.5%;
+}
+
+.user-card, .computer-card {
+    font-size: 1.1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0% 1% 0% 1%;
+    position: absolute;
+    top: 18%;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #42ebf4;
+}
+
+.user-card {
+    left: 38%;
+}
+.computer-card {
+    left: 58%;
+}
+
+.choice {
+    width: 80%;
+    margin: 7% 10% 2% 10%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+}
+.rock,.paper,.scissors {
+    border: 2px solid white;
+    width: 22%;
+    height: 88%;
+    border-radius: 50%;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rock {
+    background-image: url('https://res.cloudinary.com/itsellej/image/upload/v1533400140/rock-paper-scissors/rock.png');
+}
+
+.paper {
+    background-image:url('https://res.cloudinary.com/itsellej/image/upload/v1533400143/rock-paper-scissors/paper.png');
+}
+
+.scissors {
+    background-image:url('https://res.cloudinary.com/itsellej/image/upload/v1533400144/rock-paper-scissors/scissors.png');
+}
+
+.rock:hover, .paper:hover, .scissors:hover {
+    background-color: #42ebf4;
+    transition-duration: 1.5s;
+    cursor: pointer;
+    -webkit-animation: tada .5s;
+    animation: tada .5s;
+
+}
+
+.reset {
+    padding: 1% 2%;
+    margin-left: 46%;
+    margin-top: 0.1%;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+.reset:hover {
+    background-color: #42ebf4;
+    color: black; 
+}
